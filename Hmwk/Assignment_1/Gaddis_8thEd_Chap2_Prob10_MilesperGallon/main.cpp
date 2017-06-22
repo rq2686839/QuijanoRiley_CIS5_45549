@@ -1,0 +1,42 @@
+/* 
+ * File:   main.cpp
+ * Author: Riley Quijano
+ * Created on June 21, 2017, 9:32 PM
+ * Purpose: Calculating Miles per Gallon
+ */
+
+//System Libraries
+#include <iostream>  //Input - Output Library
+using namespace std; //Name-space under which system libraries exist
+
+//User Libraries
+
+//Global Constants
+
+//Function Prototypes
+
+//Execution begins here
+int main(int argc, char** argv) {
+    
+    //Declare variables
+    short int numGal, miles, mpg; /*numGal is the number of gallons
+                              of gasoline the car can hold, miles is 
+                              the number of miles it can travel before 
+                              refueling, and mpg is the miles per gallon
+                              the car gets*/
+    
+    //Initialize variables
+    numGal=15; //The car can hold 15 gallons of gasoline
+    miles=375; //The car can travel 375 miles before refueling. 
+    
+    //Map inputs to outputs or process the data
+    mpg=miles/numGal; /*To calculate the miles per gallon, divide the total 
+                       miles the car gets on one tank by the number of 
+                       gallons one tank holds*/
+    
+    //Output the transformed data
+    cout <<"The car gets " <<mpg <<" miles per gallon.";
+    
+    //Exit stage right!
+    return 0;
+}
